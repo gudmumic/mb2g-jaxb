@@ -29,40 +29,10 @@
             <version>${jaxb.version}</version>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>com.evolvedbinary.maven.mojohaus</groupId>
-            <artifactId>jaxb-maven-plugin</artifactId>
-            <version>3.0.0</version>
-        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-<!--
-            <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>jaxb2-maven-plugin</artifactId>
-            <version>2.5.0</version>
-            <executions>
-                <execution>
-                    <id>xjc</id>
-                    <goals>
-                        <goal>xjc</goal>
-                    </goals>
-                </execution>
-            </executions>
-            <configuration>
-                &lt;!&ndash;<xjbSources>
-                    <xjbSource>src/main/resources/global.xjb</xjbSource>
-                </xjbSources>&ndash;&gt;
-                <sources>
-                    <source>src/main/resources/jaxb.xsd</source>
-                </sources>
-                <outputDirectory>${basedir}/target/main/java</outputDirectory>
-                <clearOutputDir>false</clearOutputDir>
-            </configuration>
-            </plugin>
--->
             <plugin>
                 <groupId>com.evolvedbinary.maven.mojohaus</groupId>
                 <artifactId>jaxb-maven-plugin</artifactId>
